@@ -41,6 +41,8 @@ jobs:
           run: npm ci
 
         - name: Formatting
-          run: 
-            npm run format:check
-            npm run lint
+          run: npm run format:check
+        
+        - name: Linting
+          run:
+              npm run lint
