@@ -23,6 +23,8 @@ jobs:
         run: npm run build
 
   aut_gcp:
+    name: GCP auth build and push
+    runs-on: ubuntu-latest
     steps:
       - id: "auth"
         uses: "google-github-actions/auth@v2"
